@@ -77,16 +77,27 @@
                                     <constraint firstAttribute="height" constant="80" id="9MV-gl-oYs"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My objc app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xju-4T-eXZ">
+                                <rect key="frame" x="160.5" y="465" width="93.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Xju-4T-eXZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2a2-ph-GK4"/>
+                            <constraint firstItem="Xju-4T-eXZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hux-aS-ECu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sGy-0K-HC9" secondAttribute="bottom" id="Sjn-G7-EN8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGy-0K-HC9" secondAttribute="trailing" constant="20" id="hys-du-4Kh"/>
                             <constraint firstItem="sGy-0K-HC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iS6-tl-I3L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m9T-4h-dfI"/>
+                    <connections>
+                        <outlet property="label" destination="Xju-4T-eXZ" id="1FD-so-nOR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

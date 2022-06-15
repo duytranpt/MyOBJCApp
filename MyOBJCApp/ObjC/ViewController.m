@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 //@property (nonatomic, strong) FirstViewController *FirstVC;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end
 
 @implementation ViewController
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    _label.textColor = [UIColor colorWithRed:255 green:0 blue:0 alpha:1.0];
 //    UINavigationBar* navigationbar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, UIApplication.sharedApplication.statusBarFrame.size.height, self.view.frame.size.width, 50)];
 //    UINavigationItem* navigationItem = [[UINavigationItem alloc] initWithTitle:@"Home"];
 //    [navigationbar setItems:@[navigationItem]];
