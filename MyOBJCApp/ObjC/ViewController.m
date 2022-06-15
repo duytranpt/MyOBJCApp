@@ -27,20 +27,20 @@
 }
 
 - (IBAction)gotoFirstVC:(id)sender {
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"FirstScreen" bundle:nil];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"First" bundle:nil];
     FirstViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"First"];
         [self.navigationController pushViewController:controller animated:NO];
 }
 - (IBAction)HomeButton:(id)sender {
 
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-    HomeViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"Home"];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
+    SecondViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"Second"];
         [self.navigationController pushViewController:controller animated:NO];
 }
 - (IBAction)secondScreen:(id)sender {
     
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
-    SecondViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"Second"];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"ProfileVC" bundle:nil];
+    ProfileViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"ProfileID"];
         [self.navigationController pushViewController:controller animated:NO];
 }
 

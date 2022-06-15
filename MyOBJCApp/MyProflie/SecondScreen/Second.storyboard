@@ -83,34 +83,25 @@
                                     <action selector="deleteAll:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ddO-ro-VLr"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="164" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1lZ-qR-tmC">
-                                <rect key="frame" x="0.0" y="283" width="414" height="495"/>
-                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="164" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lZ-qR-tmC">
+                                <rect key="frame" x="0.0" y="283" width="414" height="579"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.9529411793" green="0.96862745289999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="sectionIndexBackgroundColor" red="0.9529411793" green="0.96862745289999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <sections/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-Cq-d4k" customClass="CustomButton" customModule="MyOBJCApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="798" width="374" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk9-f3-Zm9">
+                                <rect key="frame" x="354" y="802" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.82745099070000006" green="0.64705884459999996" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="hVb-9H-WV7"/>
+                                    <constraint firstAttribute="width" constant="44" id="NgG-ob-AjT"/>
+                                    <constraint firstAttribute="height" constant="44" id="UQb-hn-6bc"/>
                                 </constraints>
+                                <color key="tintColor" red="0.9529411793" green="0.96862745289999996" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
-                                        <color key="value" red="0.82745099070000006" green="0.64705884459999996" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Cập nhật"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="FontSize">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="addAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="A6P-pI-OLj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khác" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-Zg-Cbc">
                                 <rect key="frame" x="16" y="246" width="41.5" height="21"/>
@@ -132,20 +123,21 @@
                             <constraint firstItem="uMe-Zg-Cbc" firstAttribute="top" secondItem="A8h-pa-Mt9" secondAttribute="bottom" constant="18" id="9g4-sd-biA"/>
                             <constraint firstItem="A8h-pa-Mt9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ETf-ul-Ppu"/>
                             <constraint firstItem="1lZ-qR-tmC" firstAttribute="top" secondItem="nsK-h3-j3A" secondAttribute="bottom" constant="16" id="GSr-03-Za5"/>
-                            <constraint firstItem="oXD-Cq-d4k" firstAttribute="top" secondItem="1lZ-qR-tmC" secondAttribute="bottom" constant="20" id="Ke5-c0-xRa"/>
                             <constraint firstItem="A8h-pa-Mt9" firstAttribute="top" secondItem="0FI-zN-ebS" secondAttribute="bottom" id="Pel-oh-GUa"/>
                             <constraint firstItem="0FI-zN-ebS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TOX-0I-udg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0FI-zN-ebS" secondAttribute="trailing" id="WKo-s9-7Rw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hk9-f3-Zm9" secondAttribute="trailing" constant="16" id="ad5-dF-bff"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1lZ-qR-tmC" secondAttribute="bottom" id="boq-My-EYX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1lZ-qR-tmC" secondAttribute="trailing" id="eIZ-MX-NkR"/>
                             <constraint firstItem="0FI-zN-ebS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gJd-Rn-WNF"/>
-                            <constraint firstItem="oXD-Cq-d4k" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-20" id="iK4-El-Lc6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Hk9-f3-Zm9" secondAttribute="bottom" constant="16" id="lfo-oa-hGa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="A8h-pa-Mt9" secondAttribute="trailing" id="pEz-Q8-aDH"/>
-                            <constraint firstItem="oXD-Cq-d4k" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="uoF-n3-ic6"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oXD-Cq-d4k" secondAttribute="trailing" constant="20" id="wIf-hR-s0c"/>
                             <constraint firstItem="1lZ-qR-tmC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yGZ-V5-2sX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="add" destination="Hk9-f3-Zm9" id="a1a-aK-tee"/>
+                        <outlet property="profileView" destination="A8h-pa-Mt9" id="oUw-jF-AqV"/>
                         <outlet property="tableView" destination="1lZ-qR-tmC" id="Pp0-6e-Lme"/>
                     </connections>
                 </viewController>
@@ -155,13 +147,14 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="oXD-Cq-d4k">
-            <size key="intrinsicContentSize" width="82.5" height="31"/>
+        <designable name="nsK-h3-j3A">
+            <size key="intrinsicContentSize" width="24" height="14"/>
         </designable>
     </designables>
     <resources>
         <image name="backButton" width="44" height="44"/>
         <image name="maskGroup67" width="140" height="96"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

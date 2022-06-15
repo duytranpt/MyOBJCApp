@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,37 +17,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGy-0K-HC9">
-                                <rect key="frame" x="0.0" y="781" width="414" height="81"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sGy-0K-HC9">
+                                <rect key="frame" x="20" y="782" width="374" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-iY-cct">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="81"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-iY-cct" customClass="CustomButton" customModule="MyOBJCApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="80"/>
+                                        <color key="tintColor" name="mainColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Goto FirstVC"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="boderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                                <color key="value" name="ink"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="gotoFirstVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dI-rb-cYX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVP-Eb-eoq">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="81"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVP-Eb-eoq" customClass="CustomButton" customModule="MyOBJCApp" customModuleProvider="target">
+                                        <rect key="frame" x="131.5" y="0.0" width="111" height="80"/>
+                                        <color key="tintColor" name="mainColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="boderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                                <color key="value" name="ink"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="HomeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Im-EF-uhf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxt-ik-E9w">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="81"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxt-ik-E9w" customClass="CustomButton" customModule="MyOBJCApp" customModuleProvider="target">
+                                        <rect key="frame" x="262.5" y="0.0" width="111.5" height="80"/>
+                                        <color key="tintColor" name="mainColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="SecondVC"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="My Profile"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="boderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                                <color key="value" name="ink"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="secondScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p69-gb-1Ye"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="9MV-gl-oYs"/>
+                                    <constraint firstAttribute="height" constant="80" id="9MV-gl-oYs"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -54,8 +82,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sGy-0K-HC9" secondAttribute="bottom" id="Sjn-G7-EN8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGy-0K-HC9" secondAttribute="trailing" id="hys-du-4Kh"/>
-                            <constraint firstItem="sGy-0K-HC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iS6-tl-I3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGy-0K-HC9" secondAttribute="trailing" constant="20" id="hys-du-4Kh"/>
+                            <constraint firstItem="sGy-0K-HC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iS6-tl-I3L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m9T-4h-dfI"/>
@@ -83,10 +111,24 @@
             <point key="canvasLocation" x="-319" y="94"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="MT3-iY-cct">
+            <size key="intrinsicContentSize" width="106.5" height="31"/>
+        </designable>
+        <designable name="Xxt-ik-E9w">
+            <size key="intrinsicContentSize" width="89" height="31"/>
+        </designable>
+        <designable name="uVP-Eb-eoq">
+            <size key="intrinsicContentSize" width="62.5" height="31"/>
+        </designable>
+    </designables>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="ink">
+            <color red="0.52499997615814209" green="0.7369999885559082" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="0.82700002193450928" green="0.6470000147819519" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

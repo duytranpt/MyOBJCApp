@@ -14,6 +14,7 @@ class Profile: UIView {
     @IBOutlet weak var displayName: UILabel!
     @IBOutlet weak var phoneNumber: UILabel!
     @IBOutlet weak var profileID: UILabel!
+    @IBOutlet weak var detail: UIView!
     
     var nibNames = "Profile"
     var view: UIView!
@@ -37,6 +38,7 @@ class Profile: UIView {
         
         avatar.layer.cornerRadius = avatar.frame.height/2
         avatar.image = UIImage(named: "profileImg")
+        detail.isHidden = true
         addSubview(view)
     }
     

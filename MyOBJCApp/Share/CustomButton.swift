@@ -22,22 +22,35 @@ class CustomButton: UIButton {
         }
     }
     
+    @IBInspectable var boderWith: CGFloat = 0 {
+        didSet {
+            self.layer.borderWidth = boderWith
+        }
+    }
+    
+    @IBInspectable var boderWithColor: UIColor = .black {
+        didSet {
+            self.layer.borderColor = boderWithColor.cgColor
+        }
+    }
+    
     @IBInspectable var Title: String = "" {
         didSet {
             self.setTitle(Title, for: .normal)
         }
     }
 
+//    @IBInspectable var TitleFont: UIFont = .boldSystemFont(ofSize: 17) {
+//        didSet {
+//            
+//            
+//        }
+//    }
+    
     @IBInspectable var TitleColor: UIColor = .black {
         didSet {
             self.setTitleColor(TitleColor, for: .normal)
         }
     }
     
-    @IBInspectable var FontSize: CGFloat = 0 {
-        didSet {
-            self.titleLabel?.font = UIFont.boldSystemFont(ofSize: FontSize)
-        }
-    }
-
 }

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Alert" id="Y6W-OH-hqX" customClass="AlertViewController" customModule="MyOBJCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bev-cP-XiT">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fj-cW-lG1">
+                                        <rect key="frame" x="0.0" y="498" width="375" height="270"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-vu-jxI">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYq-MH-Ca3">
+                                                        <rect key="frame" x="166" y="8" width="42" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PJ-xI-H5O">
+                                                        <rect key="frame" x="324" y="4.6666666666666288" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="35" id="7gl-AV-RyR"/>
+                                                            <constraint firstAttribute="height" constant="35" id="JAY-UD-ygL"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="cancel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xdu-fM-MGV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="TYq-MH-Ca3" firstAttribute="centerY" secondItem="Gf2-vu-jxI" secondAttribute="centerY" id="1gA-D5-gak"/>
+                                                    <constraint firstItem="TYq-MH-Ca3" firstAttribute="centerX" secondItem="Gf2-vu-jxI" secondAttribute="centerX" id="47Q-9S-8Ur"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6PJ-xI-H5O" secondAttribute="trailing" constant="16" id="NQK-1h-XwI"/>
+                                                    <constraint firstItem="6PJ-xI-H5O" firstAttribute="centerY" secondItem="TYq-MH-Ca3" secondAttribute="centerY" id="Zca-c2-Rw3"/>
+                                                    <constraint firstAttribute="height" constant="44" id="bb4-sC-cVJ"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-pL-uUC">
+                                                <rect key="frame" x="16" y="60.000000000000007" width="343" height="101.66666666666669"/>
+                                                <string key="text">I have a UIView with a UILabel in it. I want the UIView to have white background color, but with an opacity of 50%. The problem whith setting view.alpha = 0.5 is that the label will have an opacity of 50% as well</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-Uq-bp9">
+                                                <rect key="frame" x="16" y="182.66666666666663" width="343" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF2-dR-ZVu" customClass="CustomButton" customModule="MyOBJCApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="44"/>
+                                                        <color key="tintColor" name="Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Huỷ"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="boderWith">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="boderWithColor">
+                                                                <color key="value" red="0.82745099070000006" green="0.64705884459999996" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="cancel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x1K-FL-1Px"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcm-ML-zzd" customClass="CustomButton" customModule="MyOBJCApp" customModuleProvider="target">
+                                                        <rect key="frame" x="179.66666666666663" y="0.0" width="163.33333333333337" height="44"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Xác nhận"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                                                <color key="value" name="Color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="confirmAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="S7d-jn-hHh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="B6e-Ag-z43"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="cXO-pL-uUC" firstAttribute="leading" secondItem="5Fj-cW-lG1" secondAttribute="leading" constant="16" id="3iT-JM-rSa"/>
+                                            <constraint firstItem="Gf2-vu-jxI" firstAttribute="top" secondItem="5Fj-cW-lG1" secondAttribute="top" id="BPs-Sn-xPN"/>
+                                            <constraint firstItem="6O5-Uq-bp9" firstAttribute="top" secondItem="cXO-pL-uUC" secondAttribute="bottom" constant="21" id="EaU-18-ARu"/>
+                                            <constraint firstAttribute="height" constant="270" id="R0y-Hu-4kA"/>
+                                            <constraint firstAttribute="trailing" secondItem="6O5-Uq-bp9" secondAttribute="trailing" constant="16" id="SLl-j6-Thi"/>
+                                            <constraint firstItem="Gf2-vu-jxI" firstAttribute="leading" secondItem="5Fj-cW-lG1" secondAttribute="leading" id="Z50-yQ-zeE"/>
+                                            <constraint firstItem="6O5-Uq-bp9" firstAttribute="leading" secondItem="5Fj-cW-lG1" secondAttribute="leading" constant="16" id="d6A-iR-mPa"/>
+                                            <constraint firstAttribute="trailing" secondItem="cXO-pL-uUC" secondAttribute="trailing" constant="16" id="sj0-i2-1eI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gf2-vu-jxI" secondAttribute="trailing" id="swT-uC-WiS"/>
+                                            <constraint firstItem="cXO-pL-uUC" firstAttribute="top" secondItem="Gf2-vu-jxI" secondAttribute="bottom" constant="16" id="usR-Mx-mnD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5Fj-cW-lG1" secondAttribute="trailing" id="Nez-H3-zEl"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Fj-cW-lG1" secondAttribute="bottom" id="RVO-Rw-Heo"/>
+                                    <constraint firstItem="5Fj-cW-lG1" firstAttribute="leading" secondItem="bev-cP-XiT" secondAttribute="leading" id="bnj-et-4er"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bev-cP-XiT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="64i-JY-wcd"/>
+                            <constraint firstItem="bev-cP-XiT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HoR-Xu-9a6"/>
+                            <constraint firstAttribute="bottom" secondItem="bev-cP-XiT" secondAttribute="bottom" id="fpv-fb-Ii3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bev-cP-XiT" secondAttribute="trailing" id="qCA-l9-egb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="FF2-dR-ZVu" id="7dJ-YS-mTK"/>
+                        <outlet property="confirmButton" destination="Mcm-ML-zzd" id="UhC-0H-odd"/>
+                        <outlet property="messageAlert" destination="cXO-pL-uUC" id="qDv-uO-92O"/>
+                        <outlet property="parentView" destination="5Fj-cW-lG1" id="6lK-Zo-0kh"/>
+                        <outlet property="titleAlert" destination="TYq-MH-Ca3" id="HYb-Jz-XaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.399999999999999" y="52.463054187192121"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="FF2-dR-ZVu">
+            <size key="intrinsicContentSize" width="50" height="31"/>
+        </designable>
+        <designable name="Mcm-ML-zzd">
+            <size key="intrinsicContentSize" width="84" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="Color">
+            <color red="0.82700002193450928" green="0.6470000147819519" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

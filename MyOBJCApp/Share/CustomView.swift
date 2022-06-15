@@ -34,35 +34,30 @@ class CustomView: UIView {
     
     
     override init(frame: CGRect) {
-        // 1. setup any properties here
         
-        // 2. call super.init(frame:)
         super.init(frame: frame)
-        
-        // 3. Setup view from .xib file
         xibSetup()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // 1. setup any properties here
         
-        // 2. call super.init(coder:)
         super.init(coder: aDecoder)
-        
-        // 3. Setup view from .xib file
         xibSetup()
     }
     
     func xibSetup() {
         view = loadViewFromNib()
-        
-        // use bounds not frame or it'll be offset
+       
         view.frame = bounds
-        deleteBtn.setTitleColor(.red, for: .normal)
-        // Make the view stretch with containing view
+        deleteBtn.setTitleColor(UIColor(named: "ink"), for: .normal)
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
-        // Adding custom subview on top of our view (over any custom drawing > see note below)
+        view.layer.cornerRadius = 8
+        view.backgroundColor = .white
         addSubview(view)
+    }
+    
+    @IBAction func tappde(_ sender: Any) {
+        print("Hello")
     }
     
     func loadViewFromNib() -> UIView {

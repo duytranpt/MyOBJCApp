@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Profile" customModule="MyOBJCApp" customModuleProvider="target">
             <connections>
                 <outlet property="avatar" destination="Tne-g7-vkW" id="A4O-SJ-pRC"/>
+                <outlet property="detail" destination="V7l-7d-KZg" id="Ozb-CW-cuG"/>
                 <outlet property="displayName" destination="tK6-8V-NK2" id="8KG-sW-Xvt"/>
                 <outlet property="phoneNumber" destination="Mnz-5h-OHm" id="frt-zo-xhK"/>
                 <outlet property="profileID" destination="IPA-i1-VR9" id="9kG-gH-rLd"/>
@@ -28,10 +29,10 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fyo-vp-7cs">
-                    <rect key="frame" x="91" y="29.5" width="251" height="55"/>
+                    <rect key="frame" x="91" y="29.5" width="210" height="55"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phạm Thành Thái" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK6-8V-NK2">
-                            <rect key="frame" x="0.0" y="0.0" width="251" height="24.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="210" height="24.5"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="24.5" id="h6d-Dc-BAL"/>
                             </constraints>
@@ -40,16 +41,16 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0988666888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnz-5h-OHm">
-                            <rect key="frame" x="0.0" y="24.5" width="251" height="14.5"/>
+                            <rect key="frame" x="0.0" y="24.5" width="210" height="14.5"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="14.5" id="Cex-Rf-FQz"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile ID: 1276418" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPA-i1-VR9">
-                            <rect key="frame" x="0.0" y="39" width="251" height="16"/>
+                            <rect key="frame" x="0.0" y="39" width="210" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="CXo-bJ-3ZM"/>
                             </constraints>
@@ -60,11 +61,34 @@
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7l-7d-KZg">
-                    <rect key="frame" x="362" y="29.5" width="49" height="44"/>
+                    <rect key="frame" x="321" y="29.5" width="90" height="44"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="show" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-VF-qwx">
+                            <rect key="frame" x="70" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Wsu-ez-8Ou"/>
+                                <constraint firstAttribute="width" constant="20" id="yZc-Mc-cct"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi tiết" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K76-ot-hR5">
+                            <rect key="frame" x="5" y="3" width="60" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="BMp-jZ-nsD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="K76-ot-hR5" firstAttribute="centerY" secondItem="SCE-VF-qwx" secondAttribute="centerY" id="4uv-0n-mIW"/>
                         <constraint firstAttribute="height" constant="44" id="7Rw-No-NRc"/>
-                        <constraint firstAttribute="width" constant="49" id="90o-t8-vwu"/>
+                        <constraint firstAttribute="width" constant="90" id="90o-t8-vwu"/>
+                        <constraint firstItem="K76-ot-hR5" firstAttribute="leading" secondItem="V7l-7d-KZg" secondAttribute="leading" constant="5" id="PcV-Cl-UG4"/>
+                        <constraint firstItem="SCE-VF-qwx" firstAttribute="top" secondItem="V7l-7d-KZg" secondAttribute="top" id="UPo-9d-qQP"/>
+                        <constraint firstItem="SCE-VF-qwx" firstAttribute="leading" secondItem="K76-ot-hR5" secondAttribute="trailing" constant="5" id="iDy-NG-0yW"/>
+                        <constraint firstAttribute="trailing" secondItem="SCE-VF-qwx" secondAttribute="trailing" id="s6K-7q-PW5"/>
                     </constraints>
                 </view>
             </subviews>
@@ -84,6 +108,7 @@
         </view>
     </objects>
     <resources>
+        <image name="show" width="21" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
