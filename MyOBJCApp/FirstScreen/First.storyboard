@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,22 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZO7-V6-HZa">
-                                <rect key="frame" x="20" y="244" width="374" height="44"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="auC-pS-8eV">
+                                <rect key="frame" x="0.0" y="194" width="414" height="59"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i25-XL-rnh" customClass="CustomTextfield" customModule="MyOBJCApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="59"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDj-qI-hjv" customClass="CustomTextfield" customModule="MyOBJCApp" customModuleProvider="target">
+                                        <rect key="frame" x="211" y="0.0" width="203" height="59"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="jTn-iv-GsV"/>
+                                    <constraint firstAttribute="trailing" secondItem="WDj-qI-hjv" secondAttribute="trailing" id="3EV-3B-1tA"/>
+                                    <constraint firstAttribute="bottom" secondItem="WDj-qI-hjv" secondAttribute="bottom" id="CXX-P7-0XO"/>
+                                    <constraint firstItem="i25-XL-rnh" firstAttribute="width" secondItem="WDj-qI-hjv" secondAttribute="width" multiplier="1:1" id="M1I-Vd-JzQ"/>
+                                    <constraint firstItem="WDj-qI-hjv" firstAttribute="top" secondItem="auC-pS-8eV" secondAttribute="top" id="hbE-ZL-Xfb"/>
+                                    <constraint firstAttribute="bottom" secondItem="i25-XL-rnh" secondAttribute="bottom" id="lJx-QB-Kxg"/>
+                                    <constraint firstItem="i25-XL-rnh" firstAttribute="leading" secondItem="auC-pS-8eV" secondAttribute="leading" id="srd-P9-1qL"/>
+                                    <constraint firstAttribute="height" constant="59" id="ujp-cJ-nnR"/>
+                                    <constraint firstItem="i25-XL-rnh" firstAttribute="top" secondItem="auC-pS-8eV" secondAttribute="top" id="wKf-fN-u4x"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZO7-V6-HZa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="95Z-xK-eW8"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZO7-V6-HZa" secondAttribute="trailing" constant="20" id="dGY-b7-EBf"/>
-                            <constraint firstItem="ZO7-V6-HZa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hpQ-qo-lwU"/>
+                            <constraint firstItem="auC-pS-8eV" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="6Ah-po-QdJ"/>
+                            <constraint firstItem="auC-pS-8eV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="aob-Zb-uFU"/>
+                            <constraint firstItem="auC-pS-8eV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jz7-7B-Rj8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="auC-pS-8eV" secondAttribute="trailing" id="wGp-Um-jDI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gender" destination="WDj-qI-hjv" id="nlc-mF-JyG"/>
+                        <outlet property="textField" destination="i25-XL-rnh" id="JWL-k5-VUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,8 +64,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

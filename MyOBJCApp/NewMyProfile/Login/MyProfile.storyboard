@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MyProfile" id="Y6W-OH-hqX" customClass="MyProfileViewController" customModule="MyOBJCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-fZ-rLO">
+                                <rect key="frame" x="15" y="116" width="384" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="4Zr-PI-zZJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHM-YR-UbR">
+                                <rect key="frame" x="15" y="169" width="384" height="59"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VVe-Sp-bcF">
+                                        <rect key="frame" x="0.0" y="12" width="384" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập bằng số điện thoại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-ex-JxG">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="mqe-Gd-20l"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ABz-Jf-oGU">
+                                                <rect key="frame" x="0.0" y="19" width="384" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="3nf-H3-GKR"/>
+                                                </constraints>
+                                                <color key="textColor" name="numberColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDd-uk-C8a">
+                                        <rect key="frame" x="0.0" y="58" width="384" height="1"/>
+                                        <color key="backgroundColor" name="textColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="UZg-qG-aMP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="VVe-Sp-bcF" firstAttribute="top" secondItem="fHM-YR-UbR" secondAttribute="top" constant="12" id="2Fi-GR-X13"/>
+                                    <constraint firstAttribute="trailing" secondItem="VVe-Sp-bcF" secondAttribute="trailing" id="2Go-4R-NdD"/>
+                                    <constraint firstAttribute="height" constant="59" id="3Gq-Qi-vef"/>
+                                    <constraint firstAttribute="bottom" secondItem="VVe-Sp-bcF" secondAttribute="bottom" constant="8" id="F0u-ZU-Z3Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="MDd-uk-C8a" secondAttribute="bottom" id="MD1-ea-2b6"/>
+                                    <constraint firstItem="VVe-Sp-bcF" firstAttribute="leading" secondItem="fHM-YR-UbR" secondAttribute="leading" id="Mp2-2q-CzI"/>
+                                    <constraint firstItem="MDd-uk-C8a" firstAttribute="leading" secondItem="fHM-YR-UbR" secondAttribute="leading" id="j5D-4l-CcL"/>
+                                    <constraint firstAttribute="trailing" secondItem="MDd-uk-C8a" secondAttribute="trailing" id="oQE-Nw-H61"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYG-1c-ZdP" customClass="Navi" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QxC-hI-rOA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q80-Aw-xTx" customClass="ButtonView" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="778" width="382" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SKX-CE-uSZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                        <color key="value" name="mainColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Xác thực"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xNt-fZ-rLO" firstAttribute="top" secondItem="UYG-1c-ZdP" secondAttribute="bottom" constant="16" id="1lP-qv-d00"/>
+                            <constraint firstItem="Q80-Aw-xTx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="EXa-IN-rjW"/>
+                            <constraint firstItem="UYG-1c-ZdP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hhl-9K-Ziz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xNt-fZ-rLO" secondAttribute="trailing" constant="15" id="I7X-HW-I9K"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Q80-Aw-xTx" secondAttribute="bottom" constant="40" id="IDo-6K-Kwt"/>
+                            <constraint firstItem="xNt-fZ-rLO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="IeO-Up-So4"/>
+                            <constraint firstItem="fHM-YR-UbR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="N9h-iS-tG9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fHM-YR-UbR" secondAttribute="trailing" constant="15" id="OOa-oe-9DG"/>
+                            <constraint firstItem="UYG-1c-ZdP" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="T9S-mi-D60"/>
+                            <constraint firstItem="fHM-YR-UbR" firstAttribute="top" secondItem="xNt-fZ-rLO" secondAttribute="bottom" constant="12" id="ft1-Wg-t2F"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Q80-Aw-xTx" secondAttribute="trailing" constant="16" id="vKh-TA-Re5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UYG-1c-ZdP" secondAttribute="trailing" id="va3-Lt-wYr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="Q80-Aw-xTx" id="w1J-QU-yU7"/>
+                        <outlet property="naviBar" destination="UYG-1c-ZdP" id="NjK-B2-vtj"/>
+                        <outlet property="phoneNumberInput" destination="ABz-Jf-oGU" id="An7-x9-tEj"/>
+                        <outlet property="phoneNumberInputView" destination="fHM-YR-UbR" id="rzp-9A-yTV"/>
+                        <outlet property="textLabel" destination="xNt-fZ-rLO" id="oKS-U5-Vrr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-60.267857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainColor">
+            <color red="0.82700002193450928" green="0.6470000147819519" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="numberColor">
+            <color red="0.18400000035762787" green="0.18400000035762787" blue="0.18400000035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

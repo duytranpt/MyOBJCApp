@@ -8,4 +8,5 @@ target 'MyOBJCApp' do
   # Pods for MyOBJCApp
 	pod 'Alamofire', '~> 5.0.0-rc.2'
 	pod 'SwiftyMenu', '~> 1.0.1'
+  pod 'CountdownLabel'
 end

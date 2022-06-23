@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OTPScreen" id="Y6W-OH-hqX" customClass="OTPScreenViewController" customModule="MyOBJCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khe-1B-DRI" customClass="OTPStackView" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="67.666666666666686" y="198" width="240" height="32"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Cnt-sG-2VR"/>
+                                    <constraint firstAttribute="width" constant="240" id="Vlp-xU-Oe3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unI-4J-kZf">
+                                <rect key="frame" x="15" y="116" width="345" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="rVR-Kb-7fA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="998-PU-ajI" customClass="Navi" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Igo-P8-Txo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DER-gh-TXU" customClass="ButtonView" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="706" width="343" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ieY-Gr-0ga"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgrColor">
+                                        <color key="value" name="mainColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Tiếp tục"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-Rl-3VC" customClass="ButtonView" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="129.66666666666666" y="262" width="116" height="15"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Ah5-7e-CVg"/>
+                                    <constraint firstAttribute="width" constant="116" id="vAo-Ll-uDU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="unI-4J-kZf" firstAttribute="top" secondItem="998-PU-ajI" secondAttribute="bottom" constant="16" id="47Y-92-ujC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DER-gh-TXU" secondAttribute="trailing" constant="16" id="4eJ-cf-7fQ"/>
+                            <constraint firstItem="khe-1B-DRI" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="AAf-6R-21i"/>
+                            <constraint firstItem="n9a-Rl-3VC" firstAttribute="top" secondItem="khe-1B-DRI" secondAttribute="bottom" constant="32" id="DRB-ki-Slv"/>
+                            <constraint firstItem="DER-gh-TXU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="IdV-qB-gjg"/>
+                            <constraint firstItem="998-PU-ajI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OvL-ho-IU7"/>
+                            <constraint firstItem="unI-4J-kZf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="Pdu-hs-u6i"/>
+                            <constraint firstItem="khe-1B-DRI" firstAttribute="top" secondItem="unI-4J-kZf" secondAttribute="bottom" constant="41" id="YaP-ts-3m0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="unI-4J-kZf" secondAttribute="trailing" constant="15" id="hi6-CJ-Ne8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="998-PU-ajI" secondAttribute="trailing" id="lJm-Cz-7Qd"/>
+                            <constraint firstItem="998-PU-ajI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rDM-tV-OfL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DER-gh-TXU" secondAttribute="bottom" constant="28" id="vMD-MY-Jtk"/>
+                            <constraint firstItem="n9a-Rl-3VC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="xsY-4X-9oh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="DER-gh-TXU" id="QmC-z5-5YN"/>
+                        <outlet property="naviBar" destination="998-PU-ajI" id="1WE-9h-jbk"/>
+                        <outlet property="otpLabel" destination="n9a-Rl-3VC" id="RYn-ra-H1y"/>
+                        <outlet property="otpTextFile" destination="khe-1B-DRI" id="UE8-Ds-z7i"/>
+                        <outlet property="textLabel" destination="unI-4J-kZf" id="XUg-sA-lmh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.399999999999999" y="77.58620689655173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainColor">
+            <color red="0.82700002193450928" green="0.6470000147819519" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

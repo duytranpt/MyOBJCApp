@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home My Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeMyProfile" id="Y6W-OH-hqX" customClass="HomeMyProfileViewController" customModule="MyOBJCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-Uh-HTG" customClass="Profile" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ZUd-qI-uLb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsV-3I-T5l" customClass="Navi" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="E8i-QX-YWy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euV-xQ-0Eh" customClass="HomeView" customModule="MyOBJCApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="208" width="414" height="199"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="XQ9-Ta-agD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-h0-m1n">
+                                <rect key="frame" x="0.0" y="415" width="414" height="481"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBc-fI-kf9" customClass="HomeView" customModule="MyOBJCApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="199" id="9SC-4N-IT6"/>
+                                            <constraint firstAttribute="height" constant="199" id="Mbi-vz-yk5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bBc-fI-kf9" firstAttribute="top" secondItem="z5F-h0-m1n" secondAttribute="top" id="Nny-NZ-Z5I"/>
+                                    <constraint firstItem="bBc-fI-kf9" firstAttribute="leading" secondItem="z5F-h0-m1n" secondAttribute="leading" id="bYf-gg-LVL"/>
+                                    <constraint firstAttribute="trailing" secondItem="bBc-fI-kf9" secondAttribute="trailing" id="mEA-wP-TVW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kbn-Uh-HTG" secondAttribute="trailing" id="A01-cV-PbY"/>
+                            <constraint firstAttribute="bottom" secondItem="z5F-h0-m1n" secondAttribute="bottom" id="AtN-ct-dta"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="euV-xQ-0Eh" secondAttribute="trailing" id="IWA-5j-OlN"/>
+                            <constraint firstItem="z5F-h0-m1n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MTE-eX-vpK"/>
+                            <constraint firstItem="kbn-Uh-HTG" firstAttribute="top" secondItem="wsV-3I-T5l" secondAttribute="bottom" id="Uaf-7U-DPx"/>
+                            <constraint firstItem="kbn-Uh-HTG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VsX-uC-ejl"/>
+                            <constraint firstItem="wsV-3I-T5l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eTP-bf-dUx"/>
+                            <constraint firstItem="wsV-3I-T5l" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="jsa-y5-SB1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wsV-3I-T5l" secondAttribute="trailing" id="kFo-0b-0qg"/>
+                            <constraint firstItem="z5F-h0-m1n" firstAttribute="top" secondItem="euV-xQ-0Eh" secondAttribute="bottom" constant="8" id="lbf-f1-msy"/>
+                            <constraint firstItem="euV-xQ-0Eh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mF5-nm-diL"/>
+                            <constraint firstItem="euV-xQ-0Eh" firstAttribute="top" secondItem="kbn-Uh-HTG" secondAttribute="bottom" constant="8" id="nmO-rX-moJ"/>
+                            <constraint firstItem="z5F-h0-m1n" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qfr-Yg-E5L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="naviBar" destination="wsV-3I-T5l" id="94a-5h-Byo"/>
+                        <outlet property="person" destination="euV-xQ-0Eh" id="N9p-vk-Dc8"/>
+                        <outlet property="profileView" destination="kbn-Uh-HTG" id="YOW-JK-RiS"/>
+                        <outlet property="uitilities" destination="bBc-fI-kf9" id="Xk1-bc-7Kd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="52.901785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

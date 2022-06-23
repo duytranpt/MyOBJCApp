@@ -35,8 +35,8 @@
 }
 - (IBAction)HomeButton:(id)sender {
 
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Second" bundle:nil];
-    SecondViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"Second"];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"HomeMyProfile" bundle:nil];
+    HomeMyProfileViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"HomeMyProfile"];
         [self.navigationController pushViewController:controller animated:NO];
 }
 - (IBAction)secondScreen:(id)sender {
@@ -44,6 +44,12 @@
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"ProfileVC" bundle:nil];
     ProfileViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"ProfileID"];
         [self.navigationController pushViewController:controller animated:NO];
+}
+
+- (IBAction)gotoMyProfile:(id)sender {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"MyProfile" bundle:nil];
+    MyProfileViewController* controller = [storyboard instantiateViewControllerWithIdentifier:@"MyProfile"];
+        [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

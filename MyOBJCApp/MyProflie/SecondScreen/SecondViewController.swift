@@ -13,7 +13,7 @@ class SecondViewController: UIViewController {
     var items: [Display] = []
     var models: [Person] = []
 
-    @IBOutlet weak var profileView: Profile!
+//    @IBOutlet weak var profileView: Profile!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var add: UIButton!
     
@@ -26,7 +26,6 @@ class SecondViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "Cell", bundle: Bundle.main), forCellReuseIdentifier: "Cell")
-        profileView.detail.isHidden = false
         tableView.sectionFooterHeight = 16
         tableView.sectionHeaderTopPadding = 0
         add.layer.cornerRadius = add.frame.height/2
